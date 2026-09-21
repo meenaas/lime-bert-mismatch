@@ -1,0 +1,72 @@
+[
+  {
+    "id": "os_01",
+    "category": "order_sensitivity",
+    "original": "The acting was terrible, but the visuals were stunning.",
+    "swapped": "The visuals were stunning, but the acting was terrible.",
+    "note": "final clause after 'but' typically dominates sentiment"
+  },
+  {
+    "id": "os_02",
+    "category": "order_sensitivity",
+    "original": "The service was slow, but the food was excellent.",
+    "swapped": "The food was excellent, but the service was slow.",
+    "note": ""
+  },
+  {
+    "id": "os_03",
+    "category": "order_sensitivity",
+    "original": "I loved the soundtrack, but the plot was boring.",
+    "swapped": "The plot was boring, but I loved the soundtrack.",
+    "note": ""
+  },
+  {
+    "id": "os_04",
+    "category": "order_sensitivity",
+    "original": "The hotel room was small, but the staff were incredibly friendly.",
+    "swapped": "The staff were incredibly friendly, but the hotel room was small.",
+    "note": ""
+  },
+  {
+    "id": "os_05",
+    "category": "order_sensitivity",
+    "original": "The book started slow, but the ending was unforgettable.",
+    "swapped": "The ending was unforgettable, but the book started slow.",
+    "note": ""
+  },
+  {
+    "id": "os_06",
+    "category": "order_sensitivity",
+    "original": "Although the camera is expensive, the image quality is outstanding.",
+    "swapped": "The image quality is outstanding, although the camera is expensive.",
+    "note": "although-clause fronting vs trailing"
+  },
+  {
+    "id": "os_07",
+    "category": "order_sensitivity",
+    "original": "Although the reviews were mixed, I found the film genuinely moving.",
+    "swapped": "I found the film genuinely moving, although the reviews were mixed.",
+    "note": ""
+  },
+  {
+    "id": "os_08",
+    "category": "order_sensitivity",
+    "original": "The battery life is poor, but the display is gorgeous.",
+    "swapped": "The display is gorgeous, but the battery life is poor.",
+    "note": ""
+  },
+  {
+    "id": "os_09",
+    "category": "order_sensitivity",
+    "original": "The wait was long, but the meal was absolutely worth it.",
+    "swapped": "The meal was absolutely worth it, but the wait was long.",
+    "note": ""
+  },
+  {
+    "id": "os_10",
+    "category": "order_sensitivity",
+    "original": "The tutorial was confusing, but the final result looked amazing.",
+    "swapped": "The final result looked amazing, but the tutorial was confusing.",
+    "note": ""
+  }
+]

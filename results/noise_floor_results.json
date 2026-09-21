@@ -1,0 +1,162 @@
+[
+  {
+    "id": "os_01",
+    "text": "The acting was terrible, but the visuals were stunning.",
+    "lime_top3_run_a": [
+      "stunning",
+      "but",
+      "were"
+    ],
+    "lime_top3_run_b": [
+      "stunning",
+      "but",
+      "were"
+    ],
+    "noise_floor_topk_overlap": 1.0,
+    "noise_floor_divergence": 0.33333333333333326
+  },
+  {
+    "id": "os_02",
+    "text": "The service was slow, but the food was excellent.",
+    "lime_top3_run_a": [
+      "excellent",
+      "but",
+      "was"
+    ],
+    "lime_top3_run_b": [
+      "excellent",
+      "but",
+      "was"
+    ],
+    "noise_floor_topk_overlap": 1.0,
+    "noise_floor_divergence": 0.3833333333333334
+  },
+  {
+    "id": "os_03",
+    "text": "I loved the soundtrack, but the plot was boring.",
+    "lime_top3_run_a": [
+      "but",
+      "boring",
+      "loved"
+    ],
+    "lime_top3_run_b": [
+      "but",
+      "boring",
+      "loved"
+    ],
+    "noise_floor_topk_overlap": 1.0,
+    "noise_floor_divergence": 0.033333333333333326
+  },
+  {
+    "id": "os_04",
+    "text": "The hotel room was small, but the staff were incredibly friendly.",
+    "lime_top3_run_a": [
+      "friendly",
+      "incredibly",
+      "but"
+    ],
+    "lime_top3_run_b": [
+      "friendly",
+      "incredibly",
+      "but"
+    ],
+    "noise_floor_topk_overlap": 1.0,
+    "noise_floor_divergence": 0.15454545454545454
+  },
+  {
+    "id": "os_05",
+    "text": "The book started slow, but the ending was unforgettable.",
+    "lime_top3_run_a": [
+      "unforgettable",
+      "slow",
+      "but"
+    ],
+    "lime_top3_run_b": [
+      "unforgettable",
+      "but",
+      "ending"
+    ],
+    "noise_floor_topk_overlap": 0.6666666666666666,
+    "noise_floor_divergence": 0.9833333333333333
+  },
+  {
+    "id": "os_06",
+    "text": "Although the camera is expensive, the image quality is outstanding.",
+    "lime_top3_run_a": [
+      "outstanding",
+      "is",
+      "quality"
+    ],
+    "lime_top3_run_b": [
+      "outstanding",
+      "Although",
+      "the"
+    ],
+    "noise_floor_topk_overlap": 0.3333333333333333,
+    "noise_floor_divergence": 0.4
+  },
+  {
+    "id": "os_07",
+    "text": "Although the reviews were mixed, I found the film genuinely moving.",
+    "lime_top3_run_a": [
+      "moving",
+      "genuinely",
+      "mixed"
+    ],
+    "lime_top3_run_b": [
+      "moving",
+      "reviews",
+      "genuinely"
+    ],
+    "noise_floor_topk_overlap": 0.6666666666666666,
+    "noise_floor_divergence": 0.3363636363636362
+  },
+  {
+    "id": "os_08",
+    "text": "The battery life is poor, but the display is gorgeous.",
+    "lime_top3_run_a": [
+      "gorgeous",
+      "is",
+      "the"
+    ],
+    "lime_top3_run_b": [
+      "gorgeous",
+      "is",
+      "but"
+    ],
+    "noise_floor_topk_overlap": 0.6666666666666666,
+    "noise_floor_divergence": 0.26666666666666683
+  },
+  {
+    "id": "os_09",
+    "text": "The wait was long, but the meal was absolutely worth it.",
+    "lime_top3_run_a": [
+      "worth",
+      "absolutely",
+      "it"
+    ],
+    "lime_top3_run_b": [
+      "worth",
+      "absolutely",
+      "it"
+    ],
+    "noise_floor_topk_overlap": 1.0,
+    "noise_floor_divergence": 0.2909090909090908
+  },
+  {
+    "id": "os_10",
+    "text": "The tutorial was confusing, but the final result looked amazing.",
+    "lime_top3_run_a": [
+      "amazing",
+      "looked",
+      "result"
+    ],
+    "lime_top3_run_b": [
+      "amazing",
+      "tutorial",
+      "The"
+    ],
+    "noise_floor_topk_overlap": 0.3333333333333333,
+    "noise_floor_divergence": 0.7515151515151516
+  }
+]

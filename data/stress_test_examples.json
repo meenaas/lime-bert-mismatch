@@ -1,0 +1,12 @@
+[
+  {"text": "This is a wonderful film.", "category": "control"},
+  {"text": "This is a terrible film.", "category": "control"},
+  {"text": "The movie was not bad at all.", "category": "negation"},
+  {"text": "I don't think this film is terrible.", "category": "negation"},
+  {"text": "The acting was great, but the plot was a complete mess.", "category": "contrast"},
+  {"text": "The visuals were stunning, however the pacing dragged the whole film down.", "category": "contrast"},
+  {"text": "Oh great, another sequel that ruins the original.", "category": "sarcasm"},
+  {"text": "Wow, what a fantastic waste of two hours.", "category": "sarcasm"},
+  {"text": "The film that everyone in my family, including my usually hard to please grandmother, absolutely loved was surprisingly boring to me.", "category": "long_range"},
+  {"text": "Despite the director earlier work being praised by critics worldwide, this particular movie fell flat.", "category": "long_range"}
+]

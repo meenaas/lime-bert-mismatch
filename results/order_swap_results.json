@@ -1,0 +1,252 @@
+[
+  {
+    "id": "os_01",
+    "category": "order_sensitivity",
+    "original_text": "The acting was terrible, but the visuals were stunning.",
+    "swapped_text": "The visuals were stunning, but the acting was terrible.",
+    "bert_label_original": 1,
+    "bert_label_swapped": 0,
+    "label_flip": true,
+    "bert_prob_original": 0.9997,
+    "bert_prob_swapped": 0.9819,
+    "delta_bert_prob": 0.9816,
+    "lime_top3_original": [
+      "stunning",
+      "but",
+      "visuals"
+    ],
+    "lime_top3_swapped": [
+      "but",
+      "terrible",
+      "stunning"
+    ],
+    "lime_topk_overlap": 0.6666666666666666,
+    "lime_divergence": 0.6666666666666666,
+    "meaningful_shift_ge_0.10": true
+  },
+  {
+    "id": "os_02",
+    "category": "order_sensitivity",
+    "original_text": "The service was slow, but the food was excellent.",
+    "swapped_text": "The food was excellent, but the service was slow.",
+    "bert_label_original": 1,
+    "bert_label_swapped": 0,
+    "label_flip": true,
+    "bert_prob_original": 0.9997,
+    "bert_prob_swapped": 0.9957,
+    "delta_bert_prob": 0.9954,
+    "lime_top3_original": [
+      "excellent",
+      "but",
+      "was"
+    ],
+    "lime_top3_swapped": [
+      "slow",
+      "but",
+      "excellent"
+    ],
+    "lime_topk_overlap": 0.6666666666666666,
+    "lime_divergence": 0.8833333333333333,
+    "meaningful_shift_ge_0.10": true
+  },
+  {
+    "id": "os_03",
+    "category": "order_sensitivity",
+    "original_text": "I loved the soundtrack, but the plot was boring.",
+    "swapped_text": "The plot was boring, but I loved the soundtrack.",
+    "bert_label_original": 0,
+    "bert_label_swapped": 1,
+    "label_flip": true,
+    "bert_prob_original": 0.9991,
+    "bert_prob_swapped": 0.9997,
+    "delta_bert_prob": 0.9987,
+    "lime_top3_original": [
+      "boring",
+      "but",
+      "loved"
+    ],
+    "lime_top3_swapped": [
+      "loved",
+      "but",
+      "soundtrack"
+    ],
+    "lime_topk_overlap": 0.6666666666666666,
+    "lime_divergence": 0.6333333333333333,
+    "meaningful_shift_ge_0.10": true
+  },
+  {
+    "id": "os_04",
+    "category": "order_sensitivity",
+    "original_text": "The hotel room was small, but the staff were incredibly friendly.",
+    "swapped_text": "The staff were incredibly friendly, but the hotel room was small.",
+    "bert_label_original": 1,
+    "bert_label_swapped": 0,
+    "label_flip": true,
+    "bert_prob_original": 0.9996,
+    "bert_prob_swapped": 0.9885,
+    "delta_bert_prob": 0.9881,
+    "lime_top3_original": [
+      "friendly",
+      "incredibly",
+      "but"
+    ],
+    "lime_top3_swapped": [
+      "but",
+      "were",
+      "room"
+    ],
+    "lime_topk_overlap": 0.3333333333333333,
+    "lime_divergence": 0.8181818181818181,
+    "meaningful_shift_ge_0.10": true
+  },
+  {
+    "id": "os_05",
+    "category": "order_sensitivity",
+    "original_text": "The book started slow, but the ending was unforgettable.",
+    "swapped_text": "The ending was unforgettable, but the book started slow.",
+    "bert_label_original": 1,
+    "bert_label_swapped": 0,
+    "label_flip": true,
+    "bert_prob_original": 0.9997,
+    "bert_prob_swapped": 0.9959,
+    "delta_bert_prob": 0.9956,
+    "lime_top3_original": [
+      "unforgettable",
+      "was",
+      "book"
+    ],
+    "lime_top3_swapped": [
+      "slow",
+      "but",
+      "unforgettable"
+    ],
+    "lime_topk_overlap": 0.3333333333333333,
+    "lime_divergence": 0.6000000000000001,
+    "meaningful_shift_ge_0.10": true
+  },
+  {
+    "id": "os_06",
+    "category": "order_sensitivity",
+    "original_text": "Although the camera is expensive, the image quality is outstanding.",
+    "swapped_text": "The image quality is outstanding, although the camera is expensive.",
+    "bert_label_original": 1,
+    "bert_label_swapped": 1,
+    "label_flip": false,
+    "bert_prob_original": 0.9999,
+    "bert_prob_swapped": 0.9998,
+    "delta_bert_prob": 0.0001,
+    "lime_top3_original": [
+      "outstanding",
+      "Although",
+      "is"
+    ],
+    "lime_top3_swapped": [
+      "outstanding",
+      "although",
+      "expensive"
+    ],
+    "lime_topk_overlap": 0.3333333333333333,
+    "lime_divergence": 0.5090909090909091,
+    "meaningful_shift_ge_0.10": false
+  },
+  {
+    "id": "os_07",
+    "category": "order_sensitivity",
+    "original_text": "Although the reviews were mixed, I found the film genuinely moving.",
+    "swapped_text": "I found the film genuinely moving, although the reviews were mixed.",
+    "bert_label_original": 1,
+    "bert_label_swapped": 1,
+    "label_flip": false,
+    "bert_prob_original": 0.9998,
+    "bert_prob_swapped": 0.9998,
+    "delta_bert_prob": 0.0001,
+    "lime_top3_original": [
+      "moving",
+      "Although",
+      "genuinely"
+    ],
+    "lime_top3_swapped": [
+      "moving",
+      "although",
+      "found"
+    ],
+    "lime_topk_overlap": 0.3333333333333333,
+    "lime_divergence": 0.6545454545454545,
+    "meaningful_shift_ge_0.10": false
+  },
+  {
+    "id": "os_08",
+    "category": "order_sensitivity",
+    "original_text": "The battery life is poor, but the display is gorgeous.",
+    "swapped_text": "The display is gorgeous, but the battery life is poor.",
+    "bert_label_original": 1,
+    "bert_label_swapped": 0,
+    "label_flip": true,
+    "bert_prob_original": 0.9998,
+    "bert_prob_swapped": 0.9976,
+    "delta_bert_prob": 0.9974,
+    "lime_top3_original": [
+      "gorgeous",
+      "is",
+      "but"
+    ],
+    "lime_top3_swapped": [
+      "poor",
+      "but",
+      "gorgeous"
+    ],
+    "lime_topk_overlap": 0.6666666666666666,
+    "lime_divergence": 0.6181818181818182,
+    "meaningful_shift_ge_0.10": true
+  },
+  {
+    "id": "os_09",
+    "category": "order_sensitivity",
+    "original_text": "The wait was long, but the meal was absolutely worth it.",
+    "swapped_text": "The meal was absolutely worth it, but the wait was long.",
+    "bert_label_original": 1,
+    "bert_label_swapped": 0,
+    "label_flip": true,
+    "bert_prob_original": 0.9999,
+    "bert_prob_swapped": 0.9757,
+    "delta_bert_prob": 0.9756,
+    "lime_top3_original": [
+      "worth",
+      "it",
+      "absolutely"
+    ],
+    "lime_top3_swapped": [
+      "but",
+      "absolutely",
+      "worth"
+    ],
+    "lime_topk_overlap": 0.6666666666666666,
+    "lime_divergence": 0.5999999999999999,
+    "meaningful_shift_ge_0.10": true
+  },
+  {
+    "id": "os_10",
+    "category": "order_sensitivity",
+    "original_text": "The tutorial was confusing, but the final result looked amazing.",
+    "swapped_text": "The final result looked amazing, but the tutorial was confusing.",
+    "bert_label_original": 1,
+    "bert_label_swapped": 0,
+    "label_flip": true,
+    "bert_prob_original": 0.9997,
+    "bert_prob_swapped": 0.9973,
+    "delta_bert_prob": 0.997,
+    "lime_top3_original": [
+      "amazing",
+      "the",
+      "but"
+    ],
+    "lime_top3_swapped": [
+      "but",
+      "amazing",
+      "was"
+    ],
+    "lime_topk_overlap": 0.6666666666666666,
+    "lime_divergence": 0.7636363636363637,
+    "meaningful_shift_ge_0.10": true
+  }
+]
