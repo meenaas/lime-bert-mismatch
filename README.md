@@ -1,6 +1,6 @@
-# Does LIME Lie to You? A Local-Linearity Stress Test on BERT
+# LIME vs. Attention on BERT: A Pilot Stress Test
 
-**TL;DR:** LIME explains BERT's predictions by fitting a locally linear surrogate model around perturbed inputs. BERT's attention is contextual and non-linear — a word's importance depends on the other words around it. This project stress-tests where those two assumptions collide: sentences built around negation, contrast, sarcasm, long-range dependency, and word-order sensitivity, where meaning genuinely can't be captured word-by-word.
+**TL;DR:** A small pilot comparing LIME word importances with last-layer [CLS] attention on a BERT sentiment model, across sentence types where word meaning depends on context (negation, contrast, sarcasm, long-range dependency, word order). Neither method is treated as ground truth: attention is not a faithful explanation in general, so disagreement here shows that the two methods diverge, not which one is right.
 
 ## Hypothesis
 
@@ -61,11 +61,9 @@ This is consistent with the known "but-clause dominance" effect in sentiment mod
 
 Divergence nearly doubles under swapping relative to LIME's own noise floor — the order-swap effect is not fully explained by LIME's inherent sampling jitter, though the gap is moderate rather than total (LIME is not perfectly self-consistent even with zero input change). n=10 is a pilot scale; treat as a directional finding, not a significance-tested result.
 
-## Why this matters for interpretability research
+## What this does and does not show
 
-This isn't "LIME is broken." It's a mechanistic, causal diagnosis: LIME's local-linearity assumption and BERT's attention mechanism encode fundamentally different notions of "importance," and the gap between them is predictable — it should track linguistic phenomena that require non-linear, contextual reasoning. That's the difference between "post-hoc explainability tools can be unreliable" (a known, generic claim) and "here is exactly which structural property causes the unreliability, and here is a controlled test that demonstrates it."
-
-That distinction — mechanism over anecdote — is the core of the research identity this repo is meant to establish, and it generalizes directly to network-facing ML: any interpretability method built on local linearization (LIME, and some SHAP variants) will face the same failure mode when explaining models over sequential, contextual data like routing tables or telemetry streams.
+This is an exploratory pilot (n=2 sentences per category; n=10 order-swap pairs). It shows that LIME and attention diverge more on contrast and long-range sentences than on simple ones, and that LIME’s explanations change only partly when a clause swap flips the prediction. It does not show which method is faithful: that needs an intervention test, such as removing the top-ranked words and measuring the change in prediction. That is the direction I took in [cuad-lime-shortcut] (https://github.com/meenaas/cuad-lime-shortcut).
 
 ## Setup
 
@@ -79,6 +77,6 @@ python run_noise_floor.py     # noise-floor control
 ## Extending this
 
 - Add more stress categories (double negation, idioms, coreference).
-- Swap `[CLS]`-attention for attention rollout or gradient-based attribution (Integrated Gradients, Captum) as a second "ground truth" to triangulate against.
-- Fine-tune on a domain-specific dataset (e.g. network log sentiment / anomaly severity) to connect this directly to the networking interpretability angle.
+- Compare against attention rollout or a gradient-based method (Integrated Gradients, via Captum), and test all methods with the same intervention, rather than treating any one as ground truth.
+- Add a deletion test: remove each method's top-ranked words (and, separately, replace them with natural alternatives) and measure how much the prediction changes.
 - Scale the order-swap set beyond n=10 (particularly more "although" pairs, to confirm the but/although split isn't an artifact of only having 2 examples).
